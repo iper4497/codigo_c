@@ -1,0 +1,8 @@
+arch alpha
+northbridge alpha/tsunami
+southbridge acer/m1543
+#southbridge...
+#superio...
+
+
+object mainboard.o

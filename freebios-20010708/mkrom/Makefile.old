@@ -1,0 +1,23 @@
+#
+# Makefile - makefile for the mkrom(8) utility
+# Copyright (c) 1999 by Net Insight AB. All Rights Reserved.
+#
+# $Id: Makefile.old,v 1.2 2000/03/05 21:52:13 jgarzik Exp $
+#
+#
+
+CC	= gcc
+CFLAGS	= -g -Wall -I../include
+OBJECTS	= mkrom.o
+
+### target:
+mkrom	: ${OBJECTS}
+	${CC} -o $@ ${OBJECTS}
+
+clean	:
+	rm -rf ${OBJECTS} *~ *.core core mkrom
+
+### rules:
+%.o	: %.c
+	${CC} ${CFLAGS} -o $@ -c $<
+

@@ -1,0 +1,36 @@
+.TH MKROM 8L "04 July 1999" "NET INSIGHT" "LOCAL USER COMMANDS"
+.SH NAME
+mkrom \- program to make ROM images for i386 compatible processors
+.SH SYNOPSIS
+.B "mkrom "
+[
+.B \-s
+.I size	
+]
+[
+.B \-o
+.I output
+] [ option ] file 
+.SH DESCRIPTION
+This man page is the documentation of the
+.I mkrom
+utility. This utility is used to create ROM images for Intel 80386
+(and above) compatible processors.
+.SH OPTIONS
+.sp 1
+.TP 0.5i
+.B \-f
+Force write to file even if the file alread exist.
+.TP 0.5i
+.BI "\-o " file
+The specifed 
+.I file
+is used as output instead for just adding the 
+.B .rom
+suffix.
+.SH BUGS
+No known bugs at the moment.
+.SH AUTHOR
+This manual page and the 
+.I mkrom(8)
+utility was written by Johan Rydberg at Net Insight AB.
